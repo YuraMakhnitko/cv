@@ -113,7 +113,7 @@ h6 {
 Снипет (HTML): cnt
 */
 [class*=__container] {
-  max-width: 71.25rem;
+  max-width: 91.875rem;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 0.9375rem;
@@ -183,29 +183,31 @@ h6 {
 */
 .cv {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 500px 1fr;
   column-gap: 60px;
   padding: 0px 50px 0px 0px;
   background: #f9f7f7;
 }
 .cv__left {
-  padding: 65px 30px 130px 60px;
+  padding: 65px 80px 130px 80px;
   display: flex;
   flex-direction: column;
-  background: rgba(229, 229, 229, 0.4392156863);
+  background: #fff;
   height: 1500px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 100%;
 }
 .cv__photo {
-  padding: 20px;
+  padding-bottom: 25px;
   border-radius: 27% 73% 79% 21%/98% 42% 58% 2%;
-  background-color: rgba(0, 0, 255, 0.05);
 }
 .cv__photo:not(:last-child) {
   margin-bottom: 50px;
 }
 .cv__image-ibg {
   padding-bottom: 100%;
-  border-radius: 50%;
+  border-radius: 6px;
   overflow: hidden;
 }
 .cv__contacts {
@@ -219,9 +221,14 @@ h6 {
 .cv__title {
   font-size: 22px;
   line-height: 1.36;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .cv__title:not(:last-child) {
   margin-bottom: 15px;
+}
+.cv__position {
+  font-size: 24px;
 }
 .cv__phone {
   line-height: 1.36;
@@ -265,6 +272,9 @@ h6 {
   flex-direction: column;
   row-gap: 7px;
 }
+.cv__list-skills:not(:last-child) {
+  margin-bottom: 50px;
+}
 .cv__skill {
   line-height: 1.36;
   position: relative;
@@ -296,7 +306,7 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 7px;
-  padding: 235px 0px 100px 0px;
+  padding: 295px 0px 100px 0px;
 }
 .cv__main-title {
   font-size: 56px;
@@ -304,12 +314,11 @@ h6 {
   text-transform: uppercase;
 }
 .cv__main-title:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
 .cv__work-exp {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
   margin-top: 70px;
   row-gap: 7px;
 }
@@ -317,14 +326,15 @@ h6 {
   margin-bottom: 50px;
 }
 .cv__right-title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
 }
 .cv__right-title:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .cv__work-sub-title {
   line-height: 1.36;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .cv__work-sub-title_upper {
@@ -344,11 +354,16 @@ h6 {
 }
 .cv__diploma {
   text-transform: capitalize;
+  font-weight: 700;
   line-height: 1.36;
 }
 .cv__un {
+  font-weight: 700;
   line-height: 1.36;
   text-transform: uppercase;
+}
+.cv__pbf {
+  font-weight: 700;
 }
 .cv__faculty {
   line-height: 1.36;
@@ -359,7 +374,9 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 7px;
-  padding-left: 35px;
+}
+.cv__pet-projects:not(:last-child) {
+  margin-bottom: 50px;
 }
 .cv__projects-pet-list {
   display: flex;
@@ -383,12 +400,27 @@ h6 {
   transform: translate(0%, -50%);
 }
 .cv__pet-link span {
+  text-transform: uppercase;
   display: inline-block;
   line-height: 1.36;
   border-bottom: 1px solid black;
 }
 .cv__pet-code span {
+  text-transform: uppercase;
   display: inline-block;
   line-height: 1.36;
   border-bottom: 1px solid black;
+}
+.cv__pet-title {
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.cv__pet-title:not(:last-child) {
+  margin-bottom: 8px;
+}
+.cv__summary {
+  line-height: 1.5;
+}
+.cv__summary:not(:last-child) {
+  margin-bottom: 50px;
 }
