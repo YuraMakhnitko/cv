@@ -113,10 +113,9 @@ h6 {
 Снипет (HTML): cnt
 */
 [class*=__container] {
-  max-width: 91.875rem;
+  max-width: 90rem;
   box-sizing: content-box;
   margin: 0 auto;
-  padding: 0 0.9375rem;
 }
 
 [class*=-ibg] {
